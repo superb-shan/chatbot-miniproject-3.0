@@ -33,14 +33,16 @@ export default function Home() {
 
   return (
     <div className="background">
-      <div className="shadow">
-        <ChatEngine
-          height="calc(100vh - 212px)"
-          projectID="8cbc83d1-b438-4cd5-9fba-10514b433789"
-          userName={username}
-          userSecret={secret}
-          renderNewMessageForm={() => <MessageFormSocial />}
-        />
+      <div>
+        <div className="shadow">
+          <ChatEngine
+            height="calc(100vh - 212px)"
+            projectID="8cbc83d1-b438-4cd5-9fba-10514b433789"
+            userName={username}
+            userSecret={secret}
+            renderNewMessageForm={() => <MessageFormSocial />}
+          />
+        </div>
       </div>
     </div>
   );
