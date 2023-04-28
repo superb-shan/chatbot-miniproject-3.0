@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <title>LearnMate Chat</title>
         <link rel="stylesheet" href="../styles/global.css" />
       </Head>
       <ContextProvider>
