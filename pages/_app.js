@@ -1,6 +1,8 @@
 import "../styles/auth.css";
 import "../styles/chats.css";
 import "../styles/index.css";
+import '../styles/loading.css';
+import "../styles/cta.css";
 
 import { ContextProvider } from '../context';
 import Head from 'next/head';

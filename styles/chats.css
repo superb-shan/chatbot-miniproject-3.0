@@ -162,3 +162,14 @@
   background-color: white !important;
   border-radius: 0px !important;
 }
+
+/* .chatbot {
+  backgroundimage: url("../pages/Telegram_logo.svg.webp");
+  backgroundsize: cover;  or cover, depending on your needs 
+  height: 50px;
+  width: 50px;
+  borderradius: 50%;
+  margintop: 30px;
+  marginleft: 1290px;
+  cursor: pointer;
+} */

@@ -16,9 +16,9 @@ export default function Home() {
   const { username, secret } = useContext(Context);
   const [showChat, setShowChat] = useState(false);
   const router = useRouter();
-
+ 
   useEffect(() => {
-    if (typeof document !== undefined) {
+    if (typeof document !== undefined) { 
       setShowChat(true);
     }
   }, []);
@@ -37,12 +37,25 @@ export default function Home() {
         <div className="shadow">
           <ChatEngine
             height="calc(100vh - 212px)"
-            projectID="8cbc83d1-b438-4cd5-9fba-10514b433789"
+            projectID="91ed7325-4316-4fed-828b-1a7f3497366f"
             userName={username}
             userSecret={secret}
             renderNewMessageForm={() => <MessageFormSocial />}
           />
         </div>
+        
+      </div>
+      <div style={{marginTop: '30px', marginLeft: '1140px', display: 'flex', gap:'10px'}}>
+        <div 
+          className="botscta"
+          style={{backgroundImage: "url('https://logowik.com/content/uploads/images/discord-new-20218785.jpg')"}} 
+          onClick={() => {window.open('https://www.example.com', '_blank');}}
+        />
+        <div 
+          className="botscta"
+          style={{backgroundImage: "url('https://www.pngkit.com/png/detail/52-520508_telegram-icon-telegram-logo-png.png')"}}
+          onClick={() => {window.open('https://www.example.com', '_blank');}}
+        />
       </div>
     </div>
   );

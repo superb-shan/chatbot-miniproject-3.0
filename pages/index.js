@@ -1,28 +1,27 @@
-import React, { useContext } from "react";
+import React, { useState, useContext } from "react";
 import { Context } from "../context";
 
 import { useRouter } from "next/router";
+import LoadingDots from "./LoadingDots";
 
 import axios from "axios";
 
 const Auth = () => {
   const { username, setUsername, secret, setSecret } = useContext(Context);
+  const [isLoading, setIsLoading] = useState(false);
 
   const router = useRouter();
 
   function onSubmit(e) {
     e.preventDefault();
-
+    setIsLoading(true);
     if (username.length === 1 || secret.length === 1) return;
 
-    axios
-      .put(
+    axios.put(
         "https://api.chatengine.io/users/",
         { username, secret },
-        { headers: { "Private-Key": "d47863a3-b977-414f-9e63-b884839f3c2e" } }
-      )
-
-      .then((r) => {
+        { headers: { "Private-Key": "8f966b8a-714a-4d45-b502-4753e27a34ab" } }
+      ).then((r) => {
         router.push("/chats");
       });
   }
@@ -51,7 +50,7 @@ const Auth = () => {
           </div>
 
           <button type="submit" className="submit-button">
-            Login / Logon
+            {isLoading ? <LoadingDots />: <>Login / Logon</>} 
           </button>
         </form>
       </div>

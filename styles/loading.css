@@ -1,0 +1,20 @@
+.loading-dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-dot {
+  width: 7px;
+  height: 7px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #04002e;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-7px);
+  }
+}
