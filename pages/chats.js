@@ -37,7 +37,7 @@ export default function Home() {
         <div className="shadow">
           <ChatEngine
             height="calc(100vh - 212px)"
-            projectID="91ed7325-4316-4fed-828b-1a7f3497366f"
+            projectID="b0fd507e-5a07-427b-b826-a5f6d77aafc1"
             userName={username}
             userSecret={secret}
             renderNewMessageForm={() => <MessageFormSocial />}
@@ -49,12 +49,12 @@ export default function Home() {
         <div 
           className="botscta"
           style={{backgroundImage: "url('https://logowik.com/content/uploads/images/discord-new-20218785.jpg')"}} 
-          onClick={() => {window.open('https://www.example.com', '_blank');}}
+          onClick={() => {window.open('https://discord.com/api/oauth2/authorize?client_id=1097497102692655165&permissions=8&scope=bot', '_blank');}}
         />
         <div 
           className="botscta"
           style={{backgroundImage: "url('https://www.pngkit.com/png/detail/52-520508_telegram-icon-telegram-logo-png.png')"}}
-          onClick={() => {window.open('https://www.example.com', '_blank');}}
+          onClick={() => {window.open('https://t.me/Learn_mate_bot', '_blank');}}
         />
       </div>
     </div>

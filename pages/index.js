@@ -20,7 +20,7 @@ const Auth = () => {
     axios.put(
         "https://api.chatengine.io/users/",
         { username, secret },
-        { headers: { "Private-Key": "8f966b8a-714a-4d45-b502-4753e27a34ab" } }
+        { headers: { "Private-Key": "b73eb5c3-571e-4168-80f0-85c83d5a7433" } }
       ).then((r) => {
         router.push("/chats");
       });
@@ -50,7 +50,7 @@ const Auth = () => {
           </div>
 
           <button type="submit" className="submit-button">
-            {isLoading ? <LoadingDots />: <>Login / Logon</>} 
+            {isLoading ? <LoadingDots />: <>Login / Logon </>} 
           </button>
         </form>
       </div>
